@@ -89,7 +89,6 @@ function game() {
     }
     this.handleButtonClick = (e) => {
         e.preventDefault();
-        console.log(e.target.id);
         if(this.snake.head.direction === '') {
             //start the spawn timer
             this.portalInterval = setInterval(this.portalUpdate, 1000*30);
@@ -97,6 +96,7 @@ function game() {
                 this.createSpecialPortal();
             }, 1000*20);
         }
+        let desiredPos;
         switch(e.target.id){
             case 'up':
                 desiredPos = { x: this.snake.head.position.x, y: this.snake.head.position.y-1 };
