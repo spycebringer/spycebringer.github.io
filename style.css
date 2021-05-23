@@ -1,0 +1,71 @@
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: black;
+}
+canvas {
+    border: 10px solid purple;
+}
+@media only screen and (max-width: 640px) {
+    canvas {
+        border: none;
+    }
+    body {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-height: 360px) {
+    body {
+        margin-top: 0;
+    }
+    .scoreBoard {
+        display: none;
+    }
+}
+.gameCanvas {
+    background: lightblue;
+    /* box-shadow: 5px 10px rgba(255, 255, 255, 0.1); */
+}
+.scoreBoard {
+    background: lightpink;
+    /* box-shadow: 5px 10px rgba(255, 255, 255, 0.1); */
+}
+/* .gameDiv {
+    width: 650px;
+    height: 100px;
+    background: grey;
+    border: 5px solid purple;
+} */
+.up-arrow {
+    position: absolute;
+    top: 21%;
+    left: 40%;
+    color: rgba(255, 255, 255, 0.432);
+    font-size: 5em;
+}
+.left-arrow {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    color: rgba(255, 255, 255, 0.432);
+    font-size: 5em;
+}
+.right-arrow {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    color: rgba(255, 255, 255, 0.432);
+    font-size: 5em;
+}
+.down-arrow {
+    position: absolute;
+    bottom: 21%;
+    left: 40%;
+    color: rgba(255, 255, 255, 0.432);
+    font-size: 5em;
+}
