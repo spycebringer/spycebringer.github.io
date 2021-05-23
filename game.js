@@ -133,7 +133,7 @@ function game() {
         } else {
             const btns = document.getElementsByClassName('btn');
             for(var i=0;i<btns.length;i++){
-                btns[i].addEventListener('click', this.handleButtonClick);
+                btns[i].addEventListener('touchstart', this.handleButtonClick);
             }
         }
         //load the music
