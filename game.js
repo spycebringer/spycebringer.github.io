@@ -1,9 +1,6 @@
-/**
- * things to do:
- */
 
 import PartCreator from '/partCreator.js';
-console.log(PartCreator)
+
 // Global variables
 /* WIDTH and HEIGHT should be divisible by SPRITE_SIZE for best visual */
 // 640 = 20 cells(400 spaces)
